@@ -229,7 +229,7 @@ export class OperationNodeTransformer {
     FetchNode: this.transformFetch.bind(this),
     TopNode: this.transformTop.bind(this),
     OutputNode: this.transformOutput.bind(this),
-    AddIndexTableNode: this.transformOutput.bind(this),
+    AddIndexTableNode: this.transformAddIndexTable.bind(this),
   })
 
   transformNode<T extends OperationNode | undefined>(node: T): T {
